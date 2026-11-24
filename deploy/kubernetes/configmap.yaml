@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: df-m-jv01-shipping-bands-bed5b22ed545422f-config
+  namespace: deployflow-test
+  labels:
+    app.kubernetes.io/name: df-m-jv01-shipping-bands-bed5b22ed545422f
+    app.kubernetes.io/managed-by: deployflow
+    app.kubernetes.io/instance: bed5b22e-d545-422f-8088-ae8b7f7799e0
+data:
+  PORT: '8301'
+  HOST: 0.0.0.0
+  SERVER_PORT: '8301'
