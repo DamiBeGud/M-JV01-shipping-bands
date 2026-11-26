@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ba-pilot-jv01-agent-20261126
+  namespace: deployflow-test
+  labels: &id001
+    app.kubernetes.io/name: ba-pilot-jv01-agent-20261126
+    app.kubernetes.io/managed-by: deployflow
+    app.kubernetes.io/instance: 48df90c0-bc3a-493c-bb1c-dbf36e413c85
+spec:
+  type: ClusterIP
+  selector: *id001
+  ports:
+  - name: http
+    port: 8301
+    targetPort: http
