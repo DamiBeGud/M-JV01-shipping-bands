@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ba-java-repair-pilot-20261127
+  namespace: deployflow-test
+  labels: &id001
+    app.kubernetes.io/name: ba-java-repair-pilot-20261127
+    app.kubernetes.io/managed-by: deployflow
+    app.kubernetes.io/instance: e894a177-eba8-4d4f-84a3-5293baaca8a7
+spec:
+  type: ClusterIP
+  selector: *id001
+  ports:
+  - name: http
+    port: 8301
+    targetPort: http
